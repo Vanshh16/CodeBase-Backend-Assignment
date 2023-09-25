@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>CodeBase Assignment</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style media="screen">
+      body{
+        font-size: 30px;
+        text-align: center;
+      }
+      .main{
+        margin-top: 100px;
+      }
+      p{
+        font-size: 50px;
+      }
+    </style>
+    <body>
+      <div class="main">
+      <p>Backend Assignment</p>
+      <form action="/uploadfile" enctype="multipart/form-data" method="post">
+        <input type="file" name="uploadfile" accept='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel' >
+        <input type="submit" value="Upload Excel">
+      </form>
+      <h1><%= message %></h1>
+    </div>
+    </body>
+</html>
